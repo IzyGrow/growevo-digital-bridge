@@ -17,7 +17,7 @@ export const HeroSection = () => {
       />
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/60" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
@@ -41,7 +41,7 @@ export const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg font-semibold"
+              className="border-gray-300 text-gray-100 bg-black/20 hover:bg-white hover:text-black px-8 py-3 text-lg font-semibold"
               onClick={scrollToNextSection}
             >
               🔘 Nasıl Yardımcı Oluyorsunuz?
