@@ -37,7 +37,7 @@ const Selection = () => {
                 size="lg" 
                 variant="outline"
                 className="px-12 py-6 text-lg font-semibold h-auto"
-                onClick={() => navigate('/corporate')}
+                onClick={() => window.open('https://growevo-growth-hub.lovable.app/', '_blank')}
               >
                 🏢 Kurumsalım
               </Button>
