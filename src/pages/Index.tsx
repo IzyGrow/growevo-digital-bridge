@@ -8,10 +8,12 @@ import { SuccessStories } from "@/components/SuccessStories";
 import { ServicePackages } from "@/components/ServicePackages";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
+import { BackToSelection } from "@/components/BackToSelection";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <BackToSelection position="top" />
       <HeroSection />
       <ValueProposition />
       <ThreeStepProcess />
@@ -20,6 +22,7 @@ const Index = () => {
       <ServicePackages />
       <FAQ />
       <FinalCTA />
+      <BackToSelection position="bottom" />
     </div>
   );
 };
