@@ -11,7 +11,7 @@ export const FinalCTA = () => {
           
           <div className="text-lg md:text-xl leading-relaxed mb-12 space-y-4">
             <p>Sen üretmeye devam et. Biz arkandayız.</p>
-            <p>Köyden, atölyeden, mutfaktan dijitale uzanan bir yolkuluk var.</p>
+            <p>Köyden, atölyeden, mutfaktan dijitale uzanan bir yolculuk var.</p>
             <p className="text-xl md:text-2xl font-semibold">Yalnız değilsin.</p>
           </div>
           
