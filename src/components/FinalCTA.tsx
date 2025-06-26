@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const FinalCTA = () => {
   return (
-    <section className="py-20 bg-primary text-primary-foreground">
+    <section className="py-20 izygrow-gradient text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-8">
@@ -28,13 +28,13 @@ export const FinalCTA = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3 text-lg font-semibold"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg font-semibold"
             >
               🔘 Bana Uygun Destek Nedir?
             </Button>
           </div>
           
-          <div className="mt-12 pt-8 border-t border-primary-foreground/20">
+          <div className="mt-12 pt-8 border-t border-white/20">
             <p className="text-sm opacity-80">
               izyGrow - Küçük üreticilerin dijital dönüşüm partneri
             </p>
