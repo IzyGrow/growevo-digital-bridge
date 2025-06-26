@@ -13,8 +13,6 @@ import { BackToSelection } from "@/components/BackToSelection";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Index = () => {
-  console.log("Index page loaded successfully");
-  
   return (
     <div className="min-h-screen">
       <BackToSelection position="top" />
