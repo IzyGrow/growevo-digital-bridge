@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { HeroSection } from "@/components/HeroSection";
@@ -9,6 +10,7 @@ import { ServicePackages } from "@/components/ServicePackages";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
 import { BackToSelection } from "@/components/BackToSelection";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -23,6 +25,7 @@ const Index = () => {
       <FAQ />
       <FinalCTA />
       <BackToSelection position="bottom" />
+      <WhatsAppButton />
     </div>
   );
 };
