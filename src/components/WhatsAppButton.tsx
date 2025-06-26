@@ -1,5 +1,5 @@
 
-import { MessageCircle } from "lucide-react";
+import { icons } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const WhatsAppButton = () => {
@@ -11,6 +11,8 @@ export const WhatsAppButton = () => {
     window.open(whatsappUrl, '_blank');
   };
 
+  const WhatsAppIcon = icons["whatsapp" as keyof typeof icons];
+
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <Button
@@ -18,7 +20,7 @@ export const WhatsAppButton = () => {
         className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
         size="icon"
       >
-        <MessageCircle className="w-7 h-7 text-white" />
+        <WhatsAppIcon className="w-7 h-7 text-white" />
       </Button>
     </div>
   );
