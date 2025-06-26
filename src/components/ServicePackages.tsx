@@ -1,88 +1,90 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const ServicePackages = () => {
-  const packages = [
-    {
-      name: "Başlangıç",
-      description: "Web sitesi + Instagram düzeni",
-      features: [
-        "Temel web sitesi kurulumu",
-        "Instagram profil düzenlemesi",
-        "Temel SEO optimizasyonu",
-        "İletişim formları"
-      ],
-      popular: false
-    },
-    {
-      name: "Orta Seviye",
-      description: "Web sitesi + sosyal medya + içerik desteği",
-      features: [
-        "Profesyonel web sitesi",
-        "Çoklu sosyal medya yönetimi",
-        "Haftalık içerik desteği",
-        "Temel analitik raporları",
-        "E-ticaret entegrasyonu"
-      ],
-      popular: true
-    },
-    {
-      name: "Profesyonel",
-      description: "Hepsi + reklam yönetimi + strateji danışmanlığı",
-      features: [
-        "Tam dijital paket",
-        "Profesyonel reklam kampanyaları",
-        "Aylık strateji danışmanlığı",
-        "Detaylı analitik raporları",
-        "Marka kimliği geliştirme",
-        "7/24 destek hattı"
-      ],
-      popular: false
-    }
-  ];
-
   return (
     <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
-            İhtiyacına Uygun Paketler Var
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-foreground">
+            Hizmet Paketlerimiz
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {packages.map((pkg, index) => (
-              <Card key={index} className={`relative ${pkg.popular ? 'ring-2 ring-primary' : ''}`}>
-                {pkg.popular && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
-                      En Popüler
-                    </span>
-                  </div>
-                )}
-                
-                <CardHeader>
-                  <CardTitle className="text-xl font-bold">{pkg.name}</CardTitle>
-                  <p className="text-muted-foreground">{pkg.description}</p>
-                </CardHeader>
-                
-                <CardContent>
-                  <ul className="space-y-3 mb-6">
-                    {pkg.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-2">
-                        <span className="text-primary mt-1">✓</span>
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold">
-              Hangi paket bana uygun?
-            </Button>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-background p-6 rounded-lg border">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Başlangıç</h3>
+              <div className="text-3xl font-bold mb-6">₺999/ay</div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  Sosyal medya yönetimi
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  Temel web sitesi
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  WhatsApp entegrasyonu
+                </li>
+              </ul>
+              <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                Başla
+              </button>
+            </div>
+            
+            <div className="bg-background p-6 rounded-lg border-2 border-primary relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold">
+                Popüler
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-primary">Profesyonel</h3>
+              <div className="text-3xl font-bold mb-6">₺1999/ay</div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  Tüm başlangıç özellikleri
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  E-ticaret sistemi
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  SEO optimizasyonu
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  Google Ads yönetimi
+                </li>
+              </ul>
+              <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                Başla
+              </button>
+            </div>
+            
+            <div className="bg-background p-6 rounded-lg border">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Kurumsal</h3>
+              <div className="text-3xl font-bold mb-6">₺3999/ay</div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  Tüm profesyonel özellikler
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  Özel tasarım
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  24/7 destek
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  Analitik raporlama
+                </li>
+              </ul>
+              <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                İletişime Geç
+              </button>
+            </div>
           </div>
         </div>
       </div>
