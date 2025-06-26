@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export const WhatsAppButton = () => {
   const phoneNumber = "905322373879"; // Türkiye country code ile
-  const message = "Merhaba, Growevo hizmetleri hakkında bilgi almak istiyorum.";
+  const message = "Merhaba, izygrow hizmetleri hakkında bilgi almak istiyorum.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   const handleWhatsAppClick = () => {

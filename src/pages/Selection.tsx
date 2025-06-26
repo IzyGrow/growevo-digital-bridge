@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +12,7 @@ const Selection = () => {
           {/* Logo */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">
-              Growevo
+              izygrow
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-light">
               İşinizi büyüten dijital büyüme ajansı
@@ -37,7 +38,7 @@ const Selection = () => {
                 size="lg" 
                 variant="outline"
                 className="px-12 py-6 text-lg font-semibold h-auto"
-                onClick={() => window.open('https://growevo-growth-hub.lovable.app/', '_blank')}
+                onClick={() => window.open('https://izygrow-growth-hub.lovable.app/', '_blank')}
               >
                 🏢 Kurumsalım
               </Button>
