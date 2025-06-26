@@ -11,9 +11,13 @@ const Selection = () => {
         <div className="max-w-2xl mx-auto text-center">
           {/* Logo */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">
-              izyGrow
-            </h1>
+            <div className="flex justify-center mb-4">
+              <img 
+                src="/lovable-uploads/8da79c6e-96df-477d-b552-dc5bb06f66da.png" 
+                alt="izyGrow Logo" 
+                className="h-16 md:h-20"
+              />
+            </div>
             <p className="text-xl md:text-2xl text-muted-foreground font-light">
               İşinizi büyüten dijital büyüme ajansı
             </p>
