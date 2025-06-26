@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 142 76% 36%;
+    --primary: 14 88% 55%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -64,7 +64,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 142 76% 36%;
+    --primary: 14 88% 55%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -100,5 +100,18 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .izygrow-gradient {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ff4757 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .izygrow-gradient:hover {
+    background: linear-gradient(135deg, #e55a2b 0%, #e08419 50%, #e63946 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
   }
 }
