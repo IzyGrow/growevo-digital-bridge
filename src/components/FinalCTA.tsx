@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 export const FinalCTA = () => {
@@ -27,7 +28,7 @@ export const FinalCTA = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3 text-lg font-semibold"
+              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3 text-lg font-semibold"
             >
               🔘 Bana Uygun Destek Nedir?
             </Button>
@@ -35,7 +36,7 @@ export const FinalCTA = () => {
           
           <div className="mt-12 pt-8 border-t border-primary-foreground/20">
             <p className="text-sm opacity-80">
-              Growevo - Küçük üreticilerin dijital dönüşüm partneri
+              izyGrow - Küçük üreticilerin dijital dönüşüm partneri
             </p>
           </div>
         </div>
