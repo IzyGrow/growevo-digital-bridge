@@ -105,13 +105,13 @@
 
 @layer components {
   .izygrow-gradient {
-    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ff4757 100%);
+    background: linear-gradient(135deg, #4ade80 0%, #06b6d4 50%, #3b82f6 100%);
     transition: all 0.3s ease;
   }
   
   .izygrow-gradient:hover {
-    background: linear-gradient(135deg, #e55a2b 0%, #e08419 50%, #e63946 100%);
+    background: linear-gradient(135deg, #22c55e 0%, #0891b2 50%, #2563eb 100%);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 4px 12px rgba(74, 222, 128, 0.3);
   }
 }
