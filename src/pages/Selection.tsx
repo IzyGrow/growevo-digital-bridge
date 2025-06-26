@@ -32,7 +32,7 @@ const Selection = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 size="lg" 
-                className="px-12 py-6 text-lg font-semibold h-auto"
+                className="px-12 py-6 text-lg font-semibold h-auto bg-primary hover:bg-primary/90"
                 onClick={() => navigate('/producer')}
               >
                 🌾 Üreticiyim
@@ -40,8 +40,7 @@ const Selection = () => {
               
               <Button 
                 size="lg" 
-                variant="outline"
-                className="px-12 py-6 text-lg font-semibold h-auto"
+                className="px-12 py-6 text-lg font-semibold h-auto bg-primary hover:bg-primary/90"
                 onClick={() => window.open('https://growevo-growth-hub.lovable.app/', '_blank')}
               >
                 🏢 Kurumsalım
