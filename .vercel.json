@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/kurumsal(/.*)?",
+      "destination": "https://kurumsal.vercel.app/$1"
+    }
+  ]
+}
