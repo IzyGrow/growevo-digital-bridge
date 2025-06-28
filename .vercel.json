@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/kurumsal(/.*)?",
-      "destination": "https://kurumsal.vercel.app/$1"
+      "destination": "https://kurumsal.izygrow.vercel.app$1"
     }
   ]
 }
