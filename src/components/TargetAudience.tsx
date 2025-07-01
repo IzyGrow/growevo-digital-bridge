@@ -1,6 +1,6 @@
 export const TargetAudience = () => {
   const producers = [
-    "Zeytin yağı üreten Ayşe Teyze",
+    "Zeytinyağı üreten Ayşe Teyze",
     "El yapımı sabun üreten Berna",
     "Lavanta, incir kurusu, erişte satan kadın kooperatifi",
     "Küçük mandıralar, seramikçiler, arıcılar..."
