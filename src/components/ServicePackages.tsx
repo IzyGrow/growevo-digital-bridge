@@ -34,15 +34,9 @@ export const ServicePackages = () => {
       popular: true
     },
     {
-      name: "Profesyonel",
-      description: "Hepsi + reklam yönetimi + strateji danışmanlığı",
+      name: "Özel Paket",
+      description: "Bize Ulaşın",
       features: [
-        "Tam dijital paket",
-        "Profesyonel reklam kampanyaları",
-        "Aylık strateji danışmanlığı",
-        "Detaylı analitik raporları",
-        "Marka kimliği geliştirme",
-        "7/24 destek hattı"
       ],
       popular: false
     }
