@@ -30,8 +30,7 @@ export const ServicePackages = () => {
         "Haftalık içerik desteği",
         "Temel analitik raporları",
         "E-ticaret entegrasyonu",
-        "Meta ve Google Ads Yönetimi", // ← Virgül eklendi
-        "Temel Seo optimizasyonu ve Blog",
+        "Meta ve Google Ads Yönetimi",
         "Whatsapp Reklam"
       ],
       popular: true
