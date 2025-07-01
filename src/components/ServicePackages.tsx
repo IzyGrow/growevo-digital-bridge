@@ -14,10 +14,10 @@ export const ServicePackages = () => {
       name: "Başlangıç",
       description: "Web sitesi + Instagram düzeni",
       features: [
-        "Temel web sitesi kurulumu",
         "Instagram profil düzenlemesi",
         "Temel SEO optimizasyonu",
-        "İletişim formları"
+        "Funnel ve Mesaj Yönetimi",
+        "Meta ve Google Ads Yönetimi"
       ],
       popular: false
     },
@@ -25,11 +25,14 @@ export const ServicePackages = () => {
       name: "Orta Seviye",
       description: "Web sitesi + sosyal medya + içerik desteği",
       features: [
-        "Profesyonel web sitesi",
+        "Profesyonel ve Dinamik web sitesi",
         "Çoklu sosyal medya yönetimi",
         "Haftalık içerik desteği",
         "Temel analitik raporları",
-        "E-ticaret entegrasyonu"
+        "E-ticaret entegrasyonu",
+        "Meta ve Google Ads Yönetimi"
+        "Temel Seo optimizasyonu ve Blog"
+        "Whatsapp Reklam"
       ],
       popular: true
     },
@@ -37,6 +40,12 @@ export const ServicePackages = () => {
       name: "Özel Paket",
       description: "Bize Ulaşın",
       features: [
+        "Tam dijital paket",
+        "Profesyonel reklam kampanyaları",
+        "Aylık strateji danışmanlığı",
+        "Detaylı analitik raporları",
+        "Marka kimliği geliştirme",
+        "7/24 destek hattı"
       ],
       popular: false
     }
