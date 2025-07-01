@@ -12,7 +12,7 @@ export const SuccessStories = () => {
       name: "Mehmet",
       location: "Antakya",
       story: "Zeytinyağı satışım dijital destek sayesinde 5 kata çıktı. Artık büyük şehirlere bile gönderim yapıyorum.",
-      image: "/lovable-uploads/success-story-2.jpg""
+      image: "/lovable-uploads/success-story-2.jpg"
     },
     {
       name: "Ayşe",
