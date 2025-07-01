@@ -6,6 +6,13 @@ export const HeroSection = () => {
     nextSection?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "905322373879"; // Türkiye country code ile
+    const message = "Ürünleriniz hakkında daha fazla bilgi almak istiyorum.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -34,6 +41,7 @@ export const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold"
+              onClick={handleWhatsAppClick}
             >
               🔘 Destek Almak İstiyorum
             </Button>
