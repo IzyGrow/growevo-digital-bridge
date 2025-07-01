@@ -1,8 +1,7 @@
 {
   "rewrites": [
-    {
-      "source": "/kurumsal(/.*)?",
-      "destination": "https://kurumsal.izygrow.vercel.app$1"
-    }
+    { "source": "/kurumsal", "destination": "https://growevo-growth-hub.lovable.app/" },
+    { "source": "/kurumsal/(.*)", "destination": "https://growevo-growth-hub.lovable.app/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
-}
+} 
