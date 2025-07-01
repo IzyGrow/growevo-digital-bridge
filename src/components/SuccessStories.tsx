@@ -18,7 +18,7 @@ export const SuccessStories = () => {
       name: "Ayşe",
       location: "Kooperatif Üyesi",
       story: "El yapımı ürünlerimizi online satışa açtık. Şimdi hem yerel hem de uluslararası müşterilerimiz var.",
-      image: "https://images.unsplash.com/photo-1594736797933-d0d7319e4984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      image: "/lovable-uploads/success-story-3.jpg"
     }
   ];
 
