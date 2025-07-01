@@ -31,7 +31,7 @@ export const ServicePackages = () => {
         "Temel analitik raporları",
         "E-ticaret entegrasyonu",
         "Meta ve Google Ads Yönetimi"
-        "Temel Seo optimizasyonu ve Blog"
+        "Temel Seo optimizasyonu ve Blog",
         "Whatsapp Reklam"
       ],
       popular: true
