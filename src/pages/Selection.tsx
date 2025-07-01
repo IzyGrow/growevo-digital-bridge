@@ -35,7 +35,7 @@ const Selection = () => {
                 className="px-12 py-6 text-lg font-semibold h-auto izygrow-gradient text-white border-0"
                 onClick={() => navigate('/producer')}
               >
-                🌾 Üreticiyim
+                🌾 Bu İşte Yeniysen
               </Button>
               
               <Button 
