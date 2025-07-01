@@ -1,7 +1,13 @@
-
 import { Button } from "@/components/ui/button";
 
 export const FinalCTA = () => {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "905322373879"; // Türkiye country code ile
+    const message = "Ürünleriniz hakkında daha fazla bilgi almak istiyorum.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section className="py-20 izygrow-gradient text-white">
       <div className="container mx-auto px-4">
@@ -21,6 +27,7 @@ export const FinalCTA = () => {
               size="lg" 
               variant="secondary"
               className="px-8 py-3 text-lg font-semibold"
+              onClick={handleWhatsAppClick}
             >
               🔘 Hemen Görüşelim
             </Button>
