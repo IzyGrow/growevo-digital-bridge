@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const ServicePackages = () => {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "905322373879"; // Türkiye country code ile
+    const message = "Ürünleriniz hakkında daha fazla bilgi almak istiyorum.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   const packages = [
     {
       name: "Başlangıç",
@@ -80,7 +87,11 @@ export const ServicePackages = () => {
           </div>
           
           <div className="text-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold"
+              onClick={handleWhatsAppClick}
+            >
               Hangi paket bana uygun?
             </Button>
           </div>
