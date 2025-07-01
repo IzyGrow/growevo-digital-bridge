@@ -30,7 +30,7 @@ export const ServicePackages = () => {
         "Haftalık içerik desteği",
         "Temel analitik raporları",
         "E-ticaret entegrasyonu",
-        "Meta ve Google Ads Yönetimi"
+        "Meta ve Google Ads Yönetimi",
         "Temel Seo optimizasyonu ve Blog",
         "Whatsapp Reklam"
       ],
