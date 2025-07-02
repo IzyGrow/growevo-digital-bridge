@@ -1,3 +1,11 @@
+import { useState } from 'react';
+import {
+  Webchat,
+  WebchatProvider,
+  Fab,
+  getClient,
+  Configuration,
+} from '@botpress/webchat';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,21 +17,49 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Selection />} />
-          <Route path="/producer" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const clientId = "ecf7c15b-43c6-4e92-b307-abd7c831730e";
+
+const configuration: Configuration = {
+  color: '#000',
+};
+
+const App = () => {
+  const client = getClient({
+    clientId,
+  });
+
+  const [isWebchatOpen, setIsWebchatOpen] = useState(false);
+
+  const toggleWebchat = () => {
+    setIsWebchatOpen((prevState) => !prevState);
+  };
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Selection />} />
+            <Route path="/producer" element={<Index />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+        <WebchatProvider client={client} configuration={configuration}>
+          <Fab onClick={toggleWebchat} />
+          <div
+            style={{
+              display: isWebchatOpen ? 'block' : 'none',
+            }}
+          >
+            <Webchat />
+          </div>
+        </WebchatProvider>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
