@@ -30,11 +30,11 @@ export const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Üretiyorsan, büyütmeyi birlikte başarırız.
+            İşinizi büyütmek için ihtiyacınız olan her şey burada.
           </h1>
           
           <h2 className="text-xl md:text-2xl mb-8 font-light opacity-90 max-w-3xl mx-auto">
-            Web sitesi, sosyal medya, satış desteği... Küçük üreticilerin ihtiyaç duyduğu tüm dijital araçlar tek çatı altında.
+            Web sitesi, sosyal medya, satış desteği... Yeni kurulan işletmelerden mikro üreticilere tüm küçük girişimler için dijital araçlar tek çatı altında.
           </h2>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
