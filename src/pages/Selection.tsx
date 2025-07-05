@@ -41,7 +41,7 @@ const Selection = () => {
               <Button 
                 size="lg" 
                 className="px-12 py-6 text-lg font-semibold h-auto izygrow-gradient text-white border-0"
-                onClick={() => window.open('https://growevo-growth-hub.lovable.app/', '_blank')}
+                onClick={() => window.open('https://izygrow.vercel.app/', '_blank')}
               >
                 🏢 Kurumsalım
               </Button>
