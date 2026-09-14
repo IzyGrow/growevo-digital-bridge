@@ -19,9 +19,7 @@ const queryClient = new QueryClient();
 
 const clientId = "ecf7c15b-43c6-4e92-b307-abd7c831730e";
 
-const configuration: Configuration = {
-  color: '#000',
-};
+const configuration: Configuration = {};
 
 const App = () => {
   const client = getClient({
